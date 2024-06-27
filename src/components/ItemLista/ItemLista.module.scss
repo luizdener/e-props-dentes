@@ -1,0 +1,17 @@
+.itemLista {
+    display: flex;
+    gap: 10px;
+
+    color: #fff;
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        svg {
+            width: 20px;
+            height: auto;
+          }
+    }
+}

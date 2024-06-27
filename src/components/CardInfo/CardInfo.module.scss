@@ -1,0 +1,73 @@
+.cardInfo {
+    padding: 20px;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 10px;
+
+    flex: 1 1 100%;
+
+
+    section {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        padding: 40px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;     
+
+        border-radius: 5px;
+
+        font-size: 13px;
+
+        ul {
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+// Estilos para telas de até 375px
+@media (max-width: 375px) {
+    .cardInfo {
+      padding: 15px; // Ajusta o padding para telas menores
+  
+      section {
+        padding: 20px 10px; // Reduz o padding para se ajustar a telas menores
+        font-size: 12px; // Ajusta o tamanho da fonte para telas menores
+      }
+    }
+  }
+  
+  // Estilos para telas de até 768px
+  @media (max-width: 768px) {
+    .cardInfo {
+      padding: 18px; // Ajusta o padding para tablets
+  
+      section {
+        padding: 30px 15px; // Ajusta o padding para se ajustar a tablets
+        font-size: 12.5px; // Ajusta o tamanho da fonte para tablets
+      }
+    }
+  }
+  
+  // Estilos para telas de até 1024px
+  @media (max-width: 1024px) {
+    .cardInfo {
+      padding: 20px; // Mantém o padding para desktops menores
+  
+      section {
+        padding: 40px 20px; // Mantém o padding para desktops menores
+        font-size: 13px; // Mantém o tamanho da fonte para desktops menores
+      }
+    }
+  }

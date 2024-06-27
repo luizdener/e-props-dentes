@@ -1,0 +1,32 @@
+.informacoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .limitedWidth {
+        justify-content: space-between;
+        gap: 40px;
+
+        // Estilos para telas de até 375px
+    @media (max-width: 375px) {
+      flex-wrap: wrap;
+      flex-direction: column; // Muda para coluna em telas menores
+      align-items: center; // Centraliza os itens
+      gap: 20px; // Reduz o espaçamento entre itens
+    }
+
+    // Estilos para telas de até 768px
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: column; // Muda para coluna em telas de tamanho médio
+      align-items: center; // Centraliza os itens
+      gap: 30px; // Ajusta o espaçamento entre itens
+    }
+
+    // Estilos para telas de até 1024px
+    @media (max-width: 1024px) {
+      flex-direction: row; // Mantém a direção em linha para telas maiores
+      gap: 40px; // Mantém o espaçamento entre itens
+    }
+    }
+}

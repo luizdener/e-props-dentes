@@ -1,0 +1,29 @@
+.rodape {
+    width: 100%;
+    padding: 20px;
+    background-color: #171d3f;
+
+    text-align: center;
+    color: #fff;
+}
+
+// Estilos para telas de até 375px
+@media (max-width: 375px) {
+    .rodape {
+      padding: 15px; // Ajusta o padding para telas menores
+    }
+  }
+  
+  // Estilos para telas de até 768px
+  @media (max-width: 768px) {
+    .rodape {
+      padding: 18px; // Ajusta o padding para tablets
+    }
+  }
+  
+  // Estilos para telas de até 1024px
+  @media (max-width: 1024px) {
+    .rodape {
+      padding: 20px; // Mantém o padding para desktops menores
+    }
+  }

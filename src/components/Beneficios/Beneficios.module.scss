@@ -1,0 +1,126 @@
+.beneficios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .limitedWidth {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        h1 {
+          text-align: center;
+        }
+
+        img {
+            width: 70%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        ul {
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            
+            list-style: none;
+
+            li {
+                flex: 1 1 100%;
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+// Estilos para telas de até 375px
+@media (max-width: 375px) {
+    .beneficios {
+      .limitedWidth {
+        img {
+          width: 100%;
+          height: 400px;
+        }
+  
+        ul {
+          flex-direction: column;
+          gap: 20px;
+  
+          li {
+            h2 {
+              font-size: 16px;
+            }
+  
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilos para telas de até 768px
+  @media (max-width: 768px) {
+    .beneficios {
+      .limitedWidth {
+        img {
+          width: 80%;
+          height: 400px;
+        }
+  
+        ul {
+          flex-direction: column;
+          gap: 30px;
+  
+          li {
+            h2 {
+              font-size: 17px;
+            }
+  
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilos para telas de até 1024px
+  @media (max-width: 1024px) {
+    .beneficios {
+      .limitedWidth {
+        img {
+          width: 90%;
+          height: 400px;
+        }
+  
+        ul {
+          gap: 40px;
+  
+          li {
+            h2 {
+              font-size: 18px;
+            }
+  
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
